@@ -10,14 +10,14 @@ def ssum(array,a,b):
         else:
             return 0
 def solve(array):
-    ss = 0
+    sum = 0
     for l in range(len(array)):
         for i in range(len(array)-l+1):
             s = ssum(array,l,i+l)
             if s != None:
-                if s > ss:
-                    ss = s
-    return ss
+                if s > sum:
+                    sum = s
+    return sum
 array = []
 for i in range(10):
     n = r.randint(-100,100)
