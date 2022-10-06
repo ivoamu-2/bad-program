@@ -4,6 +4,8 @@ def ssum(array,a,b):
         if (a != b):
             arr = array[a:b]
             return sum(arr)
+        else:
+            return 0
 def solve(array):
     ss = 0
     for l in range(len(array)):
@@ -19,7 +21,7 @@ for i in range(10):
     array.append(n)
 a = time.time()
 print(0)
-ss = solve(array)
-print(ss)
+sum = solve(array)
+print(sum)
 b = time.time()
 print(b-a)
