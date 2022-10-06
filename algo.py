@@ -2,8 +2,11 @@ import random as r
 import time
 def ssum(array,a,b):
         if (a != b):
-            arr = array[a:b]
-            return sum(arr)
+            array2 = array[a:b]
+            s = 0
+            for i in array2:
+                s = s +i
+            return s
         else:
             return 0
 def solve(array):
